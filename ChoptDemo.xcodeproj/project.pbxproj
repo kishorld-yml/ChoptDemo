@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D83C7CC828FA777500F37225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83C7CC728FA777500F37225 /* AppDelegate.swift */; };
 		D83C7CCA28FA777500F37225 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83C7CC928FA777500F37225 /* SceneDelegate.swift */; };
-		D83C7CCC28FA777500F37225 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83C7CCB28FA777500F37225 /* SignInViewController.swift */; };
+		D83C7CCC28FA777500F37225 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83C7CCB28FA777500F37225 /* LogInViewController.swift */; };
 		D83C7CCF28FA777500F37225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83C7CCD28FA777500F37225 /* Main.storyboard */; };
 		D83C7CD228FA777500F37225 /* ChoptDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D83C7CD028FA777500F37225 /* ChoptDemo.xcdatamodeld */; };
 		D83C7CD428FA777700F37225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83C7CD328FA777700F37225 /* Assets.xcassets */; };
@@ -22,6 +22,8 @@
 		D87C839E28FAABD400364D8B /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87C839D28FAABD400364D8B /* RegisterModel.swift */; };
 		D87C83A328FAAC2600364D8B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87C83A228FAAC2600364D8B /* Constants.swift */; };
 		D87C83A628FAACC100364D8B /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87C83A528FAACC100364D8B /* RegistrationViewController.swift */; };
+		D87C83A828FAED0000364D8B /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87C83A728FAED0000364D8B /* LoginModel.swift */; };
+		D87C83AA28FAEDCE00364D8B /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87C83A928FAEDCE00364D8B /* LoginAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +47,7 @@
 		D83C7CC428FA777500F37225 /* ChoptDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChoptDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83C7CC728FA777500F37225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D83C7CC928FA777500F37225 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D83C7CCB28FA777500F37225 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		D83C7CCB28FA777500F37225 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		D83C7CCE28FA777500F37225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D83C7CD128FA777500F37225 /* ChoptDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChoptDemo.xcdatamodel; sourceTree = "<group>"; };
 		D83C7CD328FA777700F37225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +62,8 @@
 		D87C839D28FAABD400364D8B /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		D87C83A228FAAC2600364D8B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D87C83A528FAACC100364D8B /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		D87C83A728FAED0000364D8B /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		D87C83A928FAEDCE00364D8B /* LoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				D87C83A428FAAC8D00364D8B /* Registration */,
-				D87C839528FAAA8C00364D8B /* SignIn */,
+				D87C839528FAAA8C00364D8B /* LogIn */,
 				D87C83A128FAAC0B00364D8B /* Constants */,
 				D87C839C28FAABAE00364D8B /* Model */,
 				D87C839628FAAA9C00364D8B /* APIManager */,
@@ -143,19 +147,20 @@
 			path = ChoptDemoUITests;
 			sourceTree = "<group>";
 		};
-		D87C839528FAAA8C00364D8B /* SignIn */ = {
+		D87C839528FAAA8C00364D8B /* LogIn */ = {
 			isa = PBXGroup;
 			children = (
-				D83C7CCB28FA777500F37225 /* SignInViewController.swift */,
+				D83C7CCB28FA777500F37225 /* LogInViewController.swift */,
 				D83C7CCD28FA777500F37225 /* Main.storyboard */,
 			);
-			path = SignIn;
+			path = LogIn;
 			sourceTree = "<group>";
 		};
 		D87C839628FAAA9C00364D8B /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
 				D87C839728FAAB5600364D8B /* RegistrationAPI.swift */,
+				D87C83A928FAEDCE00364D8B /* LoginAPI.swift */,
 			);
 			path = APIManager;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				D87C839D28FAABD400364D8B /* RegisterModel.swift */,
+				D87C83A728FAED0000364D8B /* LoginModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -321,7 +327,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D83C7CCC28FA777500F37225 /* SignInViewController.swift in Sources */,
+				D83C7CCC28FA777500F37225 /* LogInViewController.swift in Sources */,
+				D87C83A828FAED0000364D8B /* LoginModel.swift in Sources */,
+				D87C83AA28FAEDCE00364D8B /* LoginAPI.swift in Sources */,
 				D83C7CD228FA777500F37225 /* ChoptDemo.xcdatamodeld in Sources */,
 				D87C83A628FAACC100364D8B /* RegistrationViewController.swift in Sources */,
 				D87C839E28FAABD400364D8B /* RegisterModel.swift in Sources */,

@@ -8,3 +8,4 @@
 import Foundation
 let baseUrl = "https://staging-ordering-api.choptsalad.com/api/v1/users/"
 let registerUrl = "\(baseUrl)create"
+let loginUrl = "\(baseUrl)login"

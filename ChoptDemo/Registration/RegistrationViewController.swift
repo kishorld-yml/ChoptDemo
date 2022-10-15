@@ -52,19 +52,24 @@ class RegistrationViewController: UIViewController {
         guard let password = passwordTextfeild.text else {return}
         
         let register = ResgisterRequestModel(first_name: firstName, last_name: lastName, born_at: DOB, email: email, phone: phoneNumber, password: password)
-        RegistrationAPI.shareInstance.callRegisterAPI(register: register)
+        RegistrationAPI.registrationInstance.callRegisterAPI(register: register) {
+            isSuccess , message in
+            if isSuccess{
+                self.ShowAlert(message: message)
+            }else{
+                self.ShowAlert(message: message)
+            }
+        }
         
-        
-        
-        
-        
-        
-        
+       
         
     }
     
-    
-    
+    func ShowAlert(message:String){
+        let alert = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+        present(alert,animated: true,completion: nil)
+    }
     
     
     
