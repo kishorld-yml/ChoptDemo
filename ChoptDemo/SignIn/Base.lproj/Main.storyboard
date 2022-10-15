@@ -145,12 +145,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1060" y="-1794"/>
+            <point key="canvasLocation" x="-1514" y="-1563"/>
         </scene>
-        <!--View Controller-->
+        <!--Registration View Controller-->
         <scene sceneID="bnF-9g-LYl">
             <objects>
-                <viewController id="oKJ-Tc-5Pa" sceneMemberID="viewController">
+                <viewController id="oKJ-Tc-5Pa" customClass="RegistrationViewController" customModule="ChoptDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="roA-y3-w7K">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -180,6 +180,9 @@
                                                                         </fragment>
                                                                     </attributedString>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="backButtonPtressed:" destination="oKJ-Tc-5Pa" eventType="touchUpInside" id="VdB-Qm-pwS"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -215,7 +218,7 @@
                                                                 <rect key="frame" x="0.0" y="88.333333333333343" width="352.33333333333331" height="79.333333333333343"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yXi-wb-7Fs" userLabel="email">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="352.33333333333331" height="20"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="352.33333333333331" height="21"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                         <attributedString key="attributedText">
                                                                             <fragment content="Email *">
@@ -227,12 +230,12 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RR7-De-j2Q">
-                                                                        <rect key="frame" x="0.0" y="29.999999999999972" width="352.33333333333331" height="30.666666666666671"/>
+                                                                        <rect key="frame" x="0.0" y="30.999999999999972" width="352.33333333333331" height="30"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaA-cc-EwI">
-                                                                        <rect key="frame" x="0.0" y="70.666666666666657" width="352.33333333333331" height="8.6666666666666714"/>
+                                                                        <rect key="frame" x="0.0" y="70.999999999999972" width="352.33333333333331" height="8.3333333333333286"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -244,7 +247,7 @@
                                                                 <rect key="frame" x="0.0" y="176.66666666666669" width="352.33333333333331" height="79.333333333333314"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Kdt-Iw-WCb">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="352.33333333333331" height="23"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="352.33333333333331" height="24.333333333333332"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                         <attributedString key="attributedText">
                                                                             <fragment content="FirstName *">
@@ -256,7 +259,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="pVx-FK-f0k">
-                                                                        <rect key="frame" x="0.0" y="43" width="352.33333333333331" height="36.333333333333343"/>
+                                                                        <rect key="frame" x="0.0" y="44.333333333333314" width="352.33333333333331" height="35"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
@@ -286,7 +289,7 @@
                                                                 <rect key="frame" x="0.0" y="353.33333333333331" width="352.33333333333331" height="79.333333333333314"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DlG-P6-JHD" userLabel="phone number">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="352.33333333333331" height="27"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="352.33333333333331" height="28"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                         <attributedString key="attributedText">
                                                                             <fragment content="Phone number (xxx) xxx-xxxx*">
@@ -299,7 +302,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hAu-gD-Vjf">
-                                                                        <rect key="frame" x="0.0" y="37.000000000000057" width="352.33333333333331" height="42.333333333333343"/>
+                                                                        <rect key="frame" x="0.0" y="38.000000000000057" width="352.33333333333331" height="41.333333333333343"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
@@ -310,7 +313,7 @@
                                                                 <rect key="frame" x="0.0" y="441.66666666666663" width="352.33333333333331" height="79.333333333333371"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c6O-hr-Tzk" userLabel="dob">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="352.33333333333331" height="20.333333333333332"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="352.33333333333331" height="21.333333333333332"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                         <attributedString key="attributedText">
                                                                             <fragment content="Birthday (YYYY-MM-DD)">
@@ -323,12 +326,12 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DQf-91-pZG">
-                                                                        <rect key="frame" x="0.0" y="30.333333333333371" width="352.33333333333331" height="30.666666666666671"/>
+                                                                        <rect key="frame" x="0.0" y="31.333333333333371" width="352.33333333333331" height="30"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERROR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phf-Mv-jBS">
-                                                                        <rect key="frame" x="0.0" y="71" width="352.33333333333331" height="8.3333333333333286"/>
+                                                                        <rect key="frame" x="0.0" y="71.333333333333371" width="352.33333333333331" height="8"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -340,7 +343,7 @@
                                                                 <rect key="frame" x="0.0" y="530" width="352.33333333333331" height="79.333333333333371"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UTB-6G-iDp" userLabel="password">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="352.33333333333331" height="20"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="352.33333333333331" height="21.333333333333332"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                         <attributedString key="attributedText">
                                                                             <fragment content="Password *">
@@ -353,12 +356,12 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4v4-Vn-UUZ">
-                                                                        <rect key="frame" x="0.0" y="30" width="352.33333333333331" height="30.666666666666671"/>
+                                                                        <rect key="frame" x="0.0" y="31.333333333333371" width="352.33333333333331" height="30"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERROR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bx-9G-b87">
-                                                                        <rect key="frame" x="0.0" y="70.666666666666629" width="352.33333333333331" height="8.6666666666666714"/>
+                                                                        <rect key="frame" x="0.0" y="71.333333333333371" width="352.33333333333331" height="8"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -370,7 +373,7 @@
                                                                 <rect key="frame" x="0.0" y="618.33333333333337" width="352.33333333333331" height="79.333333333333371"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DoX-Yo-DWD" userLabel="confirmpass">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="352.33333333333331" height="20"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="352.33333333333331" height="21.333333333333332"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                         <attributedString key="attributedText">
                                                                             <fragment content="Confirm Password *">
@@ -383,12 +386,12 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fmD-QC-sXx">
-                                                                        <rect key="frame" x="0.0" y="30" width="352.33333333333331" height="30.666666666666671"/>
+                                                                        <rect key="frame" x="0.0" y="31.333333333333258" width="352.33333333333331" height="30"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERROR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2f-aG-R8S">
-                                                                        <rect key="frame" x="0.0" y="70.666666666666629" width="352.33333333333331" height="8.6666666666666714"/>
+                                                                        <rect key="frame" x="0.0" y="71.333333333333258" width="352.33333333333331" height="8"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -414,6 +417,9 @@
                                                                                 </fragment>
                                                                             </attributedString>
                                                                         </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="createButtonPressed:" destination="oKJ-Tc-5Pa" eventType="touchUpInside" id="hsw-si-wUk"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -455,10 +461,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Y3E-9G-tP2"/>
+                    <connections>
+                        <outlet property="dateOfBirthTextfeild" destination="DQf-91-pZG" id="lTF-an-fwJ"/>
+                        <outlet property="emailTextFeild" destination="RR7-De-j2Q" id="4UK-AM-67H"/>
+                        <outlet property="firstnameTextFeild" destination="pVx-FK-f0k" id="tQb-ow-Joc"/>
+                        <outlet property="lastNameTectFeild" destination="Yvm-b3-o3R" id="DuB-m4-76J"/>
+                        <outlet property="passwordTextfeild" destination="4v4-Vn-UUZ" id="5pg-iA-cc8"/>
+                        <outlet property="phoneNoTextFeild" destination="hAu-gD-Vjf" id="GcX-rw-LfL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yPp-aj-Yez" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-403" y="-1806"/>
+            <point key="canvasLocation" x="-874" y="-1563"/>
         </scene>
     </scenes>
     <resources>
