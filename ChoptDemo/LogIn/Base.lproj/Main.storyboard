@@ -7,6 +7,14 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aeonik-Regular.otf">
+            <string>Aeonik-Regular</string>
+        </array>
+        <array key="Baton-Black.otf">
+            <string>Baton-Black</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Log In View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -20,54 +28,66 @@
                                 <rect key="frame" x="0.0" y="47" width="390" height="763"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EgA-Pp-t3h">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="455"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="583.66666666666663"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="SQB-72-ljp">
-                                                <rect key="frame" x="30" y="30" width="330" height="425"/>
+                                                <rect key="frame" x="30" y="30" width="330" height="553.66666666666663"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLK-O2-jbG">
-                                                        <rect key="frame" x="0.0" y="0.0" width="330" height="40.666666666666664"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                                        <nil key="textColor"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="330" height="41"/>
+                                                        <fontDescription key="fontDescription" name="Baton-Black" family="Baton" pointSize="35"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Rnt-Jz-l9L">
-                                                        <rect key="frame" x="0.0" y="70.666666666666657" width="330" height="354.33333333333337"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJO-bR-gLt" userLabel="SinInErrorLabel">
+                                                        <rect key="frame" x="0.0" y="71" width="330" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                        <color key="textColor" systemColor="systemRedColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Rnt-Jz-l9L" userLabel="FeildsStackView">
+                                                        <rect key="frame" x="0.0" y="151.00000000000003" width="330" height="402.66666666666674"/>
                                                         <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="S59-Sg-Ej0">
-                                                                <rect key="frame" x="0.0" y="0.0" width="330" height="91"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="S59-Sg-Ej0" userLabel="EmailStackView">
+                                                                <rect key="frame" x="0.0" y="0.0" width="330" height="152"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoM-MN-kWh">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="330" height="37"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoM-MN-kWh">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="330" height="28"/>
+                                                                        <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="24"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h5P-NG-UiU">
-                                                                        <rect key="frame" x="0.0" y="57" width="330" height="34"/>
+                                                                        <rect key="frame" x="0.0" y="48" width="330" height="34"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="341" translatesAutoresizingMaskIntoConstraints="NO" id="t8l-QK-1B2">
+                                                                        <rect key="frame" x="0.0" y="102" width="330" height="50"/>
+                                                                        <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="12"/>
+                                                                        <color key="textColor" systemColor="systemRedColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
                                                                 </subviews>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="c5U-1Q-pL1">
-                                                                <rect key="frame" x="0.0" y="111.00000000000003" width="330" height="91"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="c5U-1Q-pL1" userLabel="PasswordStackView">
+                                                                <rect key="frame" x="0.0" y="172" width="330" height="82"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bh-8c-gEc">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="330" height="37"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="330" height="28"/>
+                                                                        <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="24"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xd4-Qr-Smb">
-                                                                        <rect key="frame" x="0.0" y="57" width="330" height="34"/>
+                                                                        <rect key="frame" x="0.0" y="48" width="330" height="34"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
                                                                 </subviews>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jvT-G7-UJZ">
-                                                                <rect key="frame" x="0.0" y="222" width="330" height="132.33333333333337"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jvT-G7-UJZ" userLabel="ButtonsStackView">
+                                                                <rect key="frame" x="0.0" y="274" width="330" height="128.66666666666663"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIi-aL-kqe">
                                                                         <rect key="frame" x="0.0" y="0.0" width="330" height="56"/>
@@ -76,15 +96,8 @@
                                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="p8L-RL-fdi"/>
                                                                         </constraints>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <attributedString key="attributedTitle">
-                                                                                <fragment content="Lets Do This">
-                                                                                    <attributes>
-                                                                                        <font key="NSFont" size="20" name="Helvetica"/>
-                                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                                    </attributes>
-                                                                                </fragment>
-                                                                            </attributedString>
+                                                                        <buttonConfiguration key="configuration" style="plain" title="Lets Do This">
+                                                                            <fontDescription key="titleFontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="21"/>
                                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </buttonConfiguration>
                                                                         <connections>
@@ -92,18 +105,11 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fiL-S4-65u">
-                                                                        <rect key="frame" x="0.0" y="76" width="330" height="56.333333333333343"/>
+                                                                        <rect key="frame" x="0.0" y="76" width="330" height="52.666666666666657"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <attributedString key="attributedTitle">
-                                                                                <fragment content="Create your Account">
-                                                                                    <attributes>
-                                                                                        <font key="NSFont" size="14" name="Helvetica"/>
-                                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                                    </attributes>
-                                                                                </fragment>
-                                                                            </attributedString>
+                                                                        <buttonConfiguration key="configuration" style="plain" title="Create your Account">
+                                                                            <fontDescription key="titleFontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="14"/>
                                                                             <color key="baseForegroundColor" red="0.031372549019607843" green="0.41960784313725491" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                         </buttonConfiguration>
                                                                         <connections>
@@ -148,12 +154,15 @@
                     </view>
                     <connections>
                         <outlet property="emailTextFeild" destination="h5P-NG-UiU" id="WKH-De-Sbi"/>
+                        <outlet property="emailValidateLabel" destination="t8l-QK-1B2" id="uHJ-Zy-bmQ"/>
+                        <outlet property="loginButton" destination="jIi-aL-kqe" id="NWp-F7-aB9"/>
                         <outlet property="passwordTextFeild" destination="Xd4-Qr-Smb" id="cP7-Yr-fSo"/>
+                        <outlet property="signInErrorLabel" destination="kJO-bR-gLt" id="UcR-YJ-h1l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1514" y="-1563"/>
+            <point key="canvasLocation" x="-4840" y="-1558"/>
         </scene>
         <!--Registration View Controller-->
         <scene sceneID="bnF-9g-LYl">
@@ -164,23 +173,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ax9-sQ-kqW">
-                                <rect key="frame" x="0.0" y="47" width="392.33333333333331" height="740"/>
+                                <rect key="frame" x="0.0" y="47" width="395.33333333333331" height="740"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rha-Dy-pAa">
-                                        <rect key="frame" x="0.0" y="0.0" width="392.33333333333331" height="883"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="395.33333333333331" height="883"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="N8W-BZ-rKY">
-                                                <rect key="frame" x="20" y="0.0" width="352.33333333333331" height="883"/>
+                                                <rect key="frame" x="20" y="0.0" width="355.33333333333331" height="883"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="acC-84-gjO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="352.33333333333331" height="47"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="355.33333333333331" height="41"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdr-N8-AJ9">
-                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="47"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="37.666666666666664" height="41"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain">
                                                                     <attributedString key="attributedTitle">
-                                                                        <fragment content="&lt;&lt;">
+                                                                        <fragment content="&lt;">
                                                                             <attributes>
                                                                                 <font key="NSFont" size="23" name="Helvetica"/>
                                                                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -195,98 +205,85 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="9F9-xy-mlz" userLabel="FeildStackView">
-                                                        <rect key="frame" x="0.0" y="97" width="352.33333333333331" height="786"/>
+                                                        <rect key="frame" x="0.0" y="91" width="355.33333333333331" height="792"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="IAa-hB-dUL" userLabel="TitleStackView">
-                                                                <rect key="frame" x="0.0" y="0.0" width="352.33333333333331" height="79.333333333333329"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="355.33333333333331" height="80"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREATE YOUR PROFILE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="em4-L8-tcV">
-                                                                        <rect key="frame" x="50.666666666666671" y="0.0" width="251.33333333333331" height="36.666666666666664"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                        <rect key="frame" x="74.000000000000014" y="0.0" width="207.33333333333337" height="33.333333333333336"/>
+                                                                        <fontDescription key="fontDescription" name="Baton-Black" family="Baton" pointSize="23"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rvf-Vr-hWf">
-                                                                        <rect key="frame" x="79.666666666666686" y="52.666666666666664" width="193" height="26.666666666666664"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All fields with a *  are required" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rvf-Vr-hWf">
+                                                                        <rect key="frame" x="85.666666666666686" y="49.333333333333336" width="184" height="30.666666666666664"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                        <attributedString key="attributedText">
-                                                                            <fragment content="All fields with a *  are required">
-                                                                                <attributes>
-                                                                                    <font key="NSFont" metaFont="menu" size="14"/>
-                                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                                </attributes>
-                                                                            </fragment>
-                                                                        </attributedString>
+                                                                        <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="14"/>
+                                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xKp-0k-PnQ" userLabel="EmailStackView">
-                                                                <rect key="frame" x="0.0" y="88.333333333333343" width="352.33333333333331" height="79.333333333333343"/>
+                                                                <rect key="frame" x="0.0" y="89" width="355.33333333333331" height="80"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yXi-wb-7Fs" userLabel="email">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="352.33333333333331" height="21"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email *" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yXi-wb-7Fs" userLabel="email">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="355.33333333333331" height="23.666666666666668"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                        <attributedString key="attributedText">
-                                                                            <fragment content="Email *">
-                                                                                <attributes>
-                                                                                    <font key="NSFont" metaFont="system" size="20"/>
-                                                                                </attributes>
-                                                                            </fragment>
-                                                                        </attributedString>
+                                                                        <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="20"/>
+                                                                        <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RR7-De-j2Q">
-                                                                        <rect key="frame" x="0.0" y="30.999999999999972" width="352.33333333333331" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="33.666666666666686" width="355.33333333333331" height="21.333333333333329"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
+                                                                        <connections>
+                                                                            <action selector="emailTextFeildEndsEdidting:" destination="oKJ-Tc-5Pa" eventType="editingDidEnd" id="m6S-mq-ENE"/>
+                                                                        </connections>
                                                                     </textField>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaA-cc-EwI">
-                                                                        <rect key="frame" x="0.0" y="70.999999999999972" width="352.33333333333331" height="8.3333333333333286"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaA-cc-EwI">
+                                                                        <rect key="frame" x="0.0" y="65" width="355.33333333333331" height="15"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" systemColor="systemRedColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cKw-qZ-e4l" userLabel="FirstnameStackview">
-                                                                <rect key="frame" x="0.0" y="176.66666666666669" width="352.33333333333331" height="79.333333333333314"/>
+                                                                <rect key="frame" x="0.0" y="178" width="355.33333333333331" height="80"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Kdt-Iw-WCb">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="352.33333333333331" height="24.333333333333332"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FirstName *" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Kdt-Iw-WCb">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="355.33333333333331" height="24"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                        <attributedString key="attributedText">
-                                                                            <fragment content="FirstName *">
-                                                                                <attributes>
-                                                                                    <font key="NSFont" metaFont="system" size="20"/>
-                                                                                </attributes>
-                                                                            </fragment>
-                                                                        </attributedString>
+                                                                        <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="20"/>
+                                                                        <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="pVx-FK-f0k">
-                                                                        <rect key="frame" x="0.0" y="44.333333333333314" width="352.33333333333331" height="35"/>
+                                                                        <rect key="frame" x="0.0" y="44" width="355.33333333333331" height="36"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Kqw-ew-7DT" userLabel="LastameViewStack">
-                                                                <rect key="frame" x="0.0" y="265" width="352.33333333333331" height="79.333333333333314"/>
+                                                                <rect key="frame" x="0.0" y="267" width="355.33333333333331" height="80"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last name *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gJ8-85-v1l" userLabel="LastName">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="352.33333333333331" height="26.666666666666668"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="355.33333333333331" height="27.333333333333332"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                        <fontDescription key="fontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="20"/>
+                                                                        <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="20"/>
                                                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yvm-b3-o3R">
-                                                                        <rect key="frame" x="0.0" y="36.666666666666686" width="352.33333333333331" height="42.666666666666657"/>
+                                                                        <rect key="frame" x="0.0" y="37.333333333333314" width="355.33333333333331" height="42.666666666666657"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
@@ -294,23 +291,17 @@
                                                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EeY-DZ-bSd" userLabel="PhonenoStackView">
-                                                                <rect key="frame" x="0.0" y="353.33333333333331" width="352.33333333333331" height="79.333333333333314"/>
+                                                                <rect key="frame" x="0.0" y="356" width="355.33333333333331" height="80"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DlG-P6-JHD" userLabel="phone number">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="352.33333333333331" height="28"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone number (xxx) xxx-xxxx*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DlG-P6-JHD" userLabel="phone number">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="355.33333333333331" height="27.333333333333332"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                        <attributedString key="attributedText">
-                                                                            <fragment content="Phone number (xxx) xxx-xxxx*">
-                                                                                <attributes>
-                                                                                    <font key="NSFont" metaFont="system" size="20"/>
-                                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                                </attributes>
-                                                                            </fragment>
-                                                                        </attributedString>
+                                                                        <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="20"/>
+                                                                        <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hAu-gD-Vjf">
-                                                                        <rect key="frame" x="0.0" y="38.000000000000057" width="352.33333333333331" height="41.333333333333343"/>
+                                                                        <rect key="frame" x="0.0" y="37.333333333333371" width="355.33333333333331" height="42.666666666666657"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
@@ -318,102 +309,90 @@
                                                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Q41-OZ-6Gy" userLabel="DOBStackView">
-                                                                <rect key="frame" x="0.0" y="441.66666666666663" width="352.33333333333331" height="79.333333333333371"/>
+                                                                <rect key="frame" x="0.0" y="445" width="355.33333333333331" height="80"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c6O-hr-Tzk" userLabel="dob">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="352.33333333333331" height="21.333333333333332"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthday (YYYY-MM-DD)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c6O-hr-Tzk" userLabel="dob">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="355.33333333333331" height="24"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                        <attributedString key="attributedText">
-                                                                            <fragment content="Birthday (YYYY-MM-DD)">
-                                                                                <attributes>
-                                                                                    <font key="NSFont" metaFont="system" size="20"/>
-                                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                                </attributes>
-                                                                            </fragment>
-                                                                        </attributedString>
+                                                                        <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="20"/>
+                                                                        <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DQf-91-pZG">
-                                                                        <rect key="frame" x="0.0" y="31.333333333333371" width="352.33333333333331" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="34" width="355.33333333333331" height="21.333333333333329"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
+                                                                        <connections>
+                                                                            <action selector="dobTextFeildEndsEditing:" destination="oKJ-Tc-5Pa" eventType="editingDidEnd" id="wTg-pl-Cxs"/>
+                                                                        </connections>
                                                                     </textField>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERROR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phf-Mv-jBS">
-                                                                        <rect key="frame" x="0.0" y="71.333333333333371" width="352.33333333333331" height="8"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                                        <nil key="textColor"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phf-Mv-jBS">
+                                                                        <rect key="frame" x="0.0" y="65.333333333333371" width="355.33333333333331" height="14.666666666666671"/>
+                                                                        <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="10"/>
+                                                                        <color key="textColor" systemColor="systemRedColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rTT-Ih-ae7" userLabel="PasswordStackView">
-                                                                <rect key="frame" x="0.0" y="530" width="352.33333333333331" height="79.333333333333371"/>
+                                                                <rect key="frame" x="0.0" y="534" width="355.33333333333331" height="80"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UTB-6G-iDp" userLabel="password">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="352.33333333333331" height="21.333333333333332"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UTB-6G-iDp" userLabel="password">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="355.33333333333331" height="24"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                        <attributedString key="attributedText">
-                                                                            <fragment content="Password *">
-                                                                                <attributes>
-                                                                                    <font key="NSFont" metaFont="system" size="20"/>
-                                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                                </attributes>
-                                                                            </fragment>
-                                                                        </attributedString>
+                                                                        <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="20"/>
+                                                                        <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4v4-Vn-UUZ">
-                                                                        <rect key="frame" x="0.0" y="31.333333333333371" width="352.33333333333331" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="34" width="355.33333333333331" height="21.333333333333329"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
+                                                                        <connections>
+                                                                            <action selector="passwordFeildEndsEditing:" destination="oKJ-Tc-5Pa" eventType="editingDidEnd" id="Uhz-YB-pER"/>
+                                                                        </connections>
                                                                     </textField>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERROR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bx-9G-b87">
-                                                                        <rect key="frame" x="0.0" y="71.333333333333371" width="352.33333333333331" height="8"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bx-9G-b87">
+                                                                        <rect key="frame" x="0.0" y="65.333333333333371" width="355.33333333333331" height="14.666666666666671"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" systemColor="systemRedColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4iT-yQ-FBA" userLabel="ConformStackView">
-                                                                <rect key="frame" x="0.0" y="618.33333333333337" width="352.33333333333331" height="79.333333333333371"/>
+                                                                <rect key="frame" x="0.0" y="623" width="355.33333333333331" height="80"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DoX-Yo-DWD" userLabel="confirmpass">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="352.33333333333331" height="21.333333333333332"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DoX-Yo-DWD" userLabel="confirmpass">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="355.33333333333331" height="23.666666666666668"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                        <attributedString key="attributedText">
-                                                                            <fragment content="Confirm Password *">
-                                                                                <attributes>
-                                                                                    <font key="NSFont" metaFont="system" size="20"/>
-                                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                                </attributes>
-                                                                            </fragment>
-                                                                        </attributedString>
+                                                                        <fontDescription key="fontDescription" name="Aeonik-Regular" family="Aeonik" pointSize="20"/>
+                                                                        <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fmD-QC-sXx">
-                                                                        <rect key="frame" x="0.0" y="31.333333333333258" width="352.33333333333331" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="33.666666666666629" width="355.33333333333331" height="21.333333333333329"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERROR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2f-aG-R8S">
-                                                                        <rect key="frame" x="0.0" y="71.333333333333258" width="352.33333333333331" height="8"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2f-aG-R8S">
+                                                                        <rect key="frame" x="0.0" y="65" width="355.33333333333331" height="15"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" systemColor="systemRedColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="89" translatesAutoresizingMaskIntoConstraints="NO" id="bpS-b0-sLt" userLabel="ButtonStackView">
-                                                                <rect key="frame" x="0.0" y="706.66666666666663" width="352.33333333333331" height="79.333333333333371"/>
+                                                                <rect key="frame" x="0.0" y="712" width="355.33333333333331" height="80"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="QwT-Nz-gwH">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="352.33333333333331" height="79.333333333333329"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="355.33333333333331" height="80"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="backgroundColor" red="0.031372549019607843" green="0.41960784313725491" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain">
                                                                             <attributedString key="attributedTitle">
@@ -470,22 +449,33 @@
                     </view>
                     <navigationItem key="navigationItem" id="Y3E-9G-tP2"/>
                     <connections>
+                        <outlet property="backButton" destination="Gdr-N8-AJ9" id="OYI-Y0-LWF"/>
+                        <outlet property="confirmPasswordFeild" destination="fmD-QC-sXx" id="O4v-7b-626"/>
+                        <outlet property="confirmPasswordLabel" destination="m2f-aG-R8S" id="3Ae-Cg-fIc"/>
+                        <outlet property="createButton" destination="QwT-Nz-gwH" id="3na-Zy-K3G"/>
                         <outlet property="dateOfBirthTextfeild" destination="DQf-91-pZG" id="lTF-an-fwJ"/>
+                        <outlet property="dobErrorLabel" destination="Phf-Mv-jBS" id="Ytg-Ty-UDG"/>
+                        <outlet property="emailErrorLabel" destination="OaA-cc-EwI" id="46d-V3-kDM"/>
                         <outlet property="emailTextFeild" destination="RR7-De-j2Q" id="4UK-AM-67H"/>
                         <outlet property="firstnameTextFeild" destination="pVx-FK-f0k" id="tQb-ow-Joc"/>
                         <outlet property="lastNameTectFeild" destination="Yvm-b3-o3R" id="DuB-m4-76J"/>
+                        <outlet property="passwordErrorlabel" destination="4bx-9G-b87" id="KLM-GL-fUb"/>
                         <outlet property="passwordTextfeild" destination="4v4-Vn-UUZ" id="5pg-iA-cc8"/>
                         <outlet property="phoneNoTextFeild" destination="hAu-gD-Vjf" id="GcX-rw-LfL"/>
+                        <outlet property="registerErrorLabel" destination="rvf-Vr-hWf" id="NyE-Xn-NH4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yPp-aj-Yez" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-483" y="-1563"/>
+            <point key="canvasLocation" x="-4174" y="-1558"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
