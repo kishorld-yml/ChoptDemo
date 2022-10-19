@@ -15,7 +15,7 @@ class RegistrationAPI {
     static let registrationInstance = RegistrationAPI()
     var emailErroer = ""
     func calling1RegisterApi(register: ResgisterRequestModel,completionHandler: @escaping (Bool,String) -> Void) {
-        var requestError = " "
+        
         let url = URL(string: registerUrl)
         var request = URLRequest(url: url!)
         request.httpMethod = "POST"
@@ -24,7 +24,6 @@ class RegistrationAPI {
         do {
             let requestBody = try JSONEncoder().encode(register)
             request.httpBody = requestBody
-            // request.addValue("application/json", forHTTPHeaderField: "content-type")
             URLSession.shared.dataTask(with: request) { data, httpresponse, error in
                 if data != nil && data?.count != 0 {
                     let response = String(data: data!, encoding: .utf8)
